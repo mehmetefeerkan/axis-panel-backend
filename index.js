@@ -1,3 +1,5 @@
+process.chdir(__dirname);
+
 const svScanner = require('./serverscanner.js')
 const express = require('express');
 const app = express();
