@@ -203,5 +203,5 @@ function gethttp(url) {
         return JSON.parse(xmlHttp.responseText);
     }
 }
-app.listen($.router.endpoint.port, $.router.endpoint.port); //define which ip and port for the express to listen on.
+app.listen($.router.endpoint.port, $.router.endpoint.host); //define which ip and port for the express to listen on.
 
