@@ -144,6 +144,10 @@ app.get('/serverList/', async function (req, res) { //initilize express
     const serversResponse = await fetch(dbsaddr).then(response => response.json()).catch(error => isError = true)
     res.send(200, { serversResponse })
 })
+app.get('/currentStats/', async function (req, res) { //initilize express
+    const serversResponse = await fetch(dbsaddr).then(response => response.json()).catch(error => isError = true)
+    res.send(200, { serversResponse })
+})
 
 app.get('/getServer/:token', async function (req, res) { //initilize express
     const serversResponse = await fetch(dbsaddr + "/" + req.params.token).then(response => response.json()).catch(error => isError = true)
